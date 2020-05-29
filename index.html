@@ -23,23 +23,35 @@
             justify-content: center;
             align-items: center;
             background: url("https://images4.alphacoders.com/980/thumb-1920-980708.png");
+            background-size: cover;
         }
         .home-container {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;            
-        }
-        .header-container {
-            /*background: rgba(240,240,240,0.5);*/
-            padding: .5em 2em;
-            border-radius: 1em;
+            
         }
         h1 {
             font-family: Teko, sans-serif;
             font-size: 7.5em;
             color: #121212;        
         }
+        @media (max-width: 480px) { /* mobile */
+            .home-container {
+                /*border: 1px solid red;*/
+            }
+            .header-container {
+                /*border: 1px solid green;*/
+                max-width: 80%;
+            }
+            h1 {
+                font-family: Teko, sans-serif;
+                font-size: 5em;
+                color: #121212;        
+            }
+        }
+
     </style>
 </head>
 <body>
